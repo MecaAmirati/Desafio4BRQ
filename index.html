@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 4</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>SyncTur</h1>
+    </header>
+
+    <main>
+        <h2 class="cadastrarPacotes">Cadastrar Pacotes</h2>
+        <div class="conteudo">
+            <div class="boxStatusData">
+                <label id="txtPacote">Pacote</label>
+                <input type="text" class="nome" placeholder="Digite nome completo">
+                <div class="pacotes">
+                    <div class="statusData">
+                        <label id="txtPacote">Status do Pacote</label><br>
+                        <input type="checkbox" name="status" id="ativo" value="Ativo">
+                        <label >Ativo</label><br>
+                        <input type="checkbox" name="status" id="inAtivo" value="inAtivo">
+                        <label >Inativo</label>
+                    </div>
+
+                    <div class="inputData">
+                        <label id="txtPacote">Data da Viagem</label><br>
+                        <input type="date" class="data" placeholder="Data">
+                    </div>
+                </div>
+            </div>
+            <div class="descricao">
+                <label id="txtPacote">Descrição</label>
+                <textarea class="descricaoArea" placeholder="Descrição do pacote"></textarea>
+            </div>
+        </div>
+        <button type="submit" class="cadastro">Cadastrar</button>
+
+        <div class="cardAPI">
+            <div class="container">
+                <h2 class="nomeAPI">Pacote X</h2>
+                <p class="txtAPI">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p class="txtData">Data da viagem: 25/08/1993</p>
+                <button type="submit" class="editar">Editar</button>
+                <button type="submit" class="excluir">Excluir</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <h2>SyncTur</h2>
+        <div class="rodape">
+            <p id="txtFooter">Company Inc., 8901 Marmora Road, Glasgow, D04 89GR</p>
+            <p id="txtFooter">Call us now toll free: (800)2345-6789</p>
+            <p id="txtFooter">Customer support: support@demolink.org</p>
+            <p id="txtFooter">Skype: sample-username</p>
+        </div>
+    </footer>
+</body>
+</html>

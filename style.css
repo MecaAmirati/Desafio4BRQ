@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto&display=swap');
+
+:root{
+    --azulEscuro: #152536;
+    --vermelho: #DC3545;
+    --laranja: #F6511D;
+    --amarelo: #FFC107;
+    --cinza: #f8f9fa;
+    --roxo: #8458FF;
+}
+
+*{
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    width: 1440px;
+    width: 100%;
+    height: auto;
+}
+
+header{
+    background-color: var(--cinza);
+    border-radius: 5px;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+header h1{
+    text-align: left;
+    font-size: 20px;
+    padding: 10px;
+    font-weight: 700;
+}
+
+main h2{
+    font-weight: 700;
+    font-size: 25px;
+}
+
+main{
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    width: 1190px;
+}
+
+.nome{
+    width: 580;
+    height: 40px;
+    padding-left: 20px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.data{
+    width: 295px;
+    height: 40px;
+    border-radius: 5px;
+
+}
+
+.descricaoArea{
+    border-radius: 5px;
+    max-width: 555px;
+    min-width: 555px;
+    max-height: 160px;
+    min-height: 160px;
+    font-size: 16px;
+}
+
+.conteudo{
+    /* border: 1px solid black; */
+    margin-top: 60px;
+    display: flex;
+    width: 100%;
+}
+
+.boxStatusData{
+    /* border: 1px solid orange; */
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+#txtPacote{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.cadastrarPacotes{
+    text-align: center;
+    margin-top: 55px;
+}
+
+.pacotes{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    margin-top: 30px;
+}
+
+.descricao{
+    /* border: 1px solid green; */
+    margin-left: 40px;
+}
+
+.descricao textarea{
+    margin-left: 0px;
+}
+
+.inputData{
+    /* border: 1px solid purple; */
+    margin-left: 0px;
+    
+}
+
+.data{
+    margin-top: 10%;
+    height: 40px;
+
+}
+
+.statusData input{
+    margin-top: 20px;
+
+}
+
+.statusData label{
+    font-size: 12px;
+}
+
+.cadastro{
+    align-items: center;
+    text-align: center;
+    font-size: 16px;
+    width: 110px;
+    height: 40px;
+    background: var(--roxo);
+    color: white;
+    border-radius: 5px;
+    border: 1px solid var(--roxo);
+    margin-top: 60px;
+    margin-bottom: 70px;
+}
+
+.cardAPI{
+    border: 1px solid #DEE2E6;
+    border-radius: 5px;
+    margin-top: 25px;
+    width: 100%;
+}
+
+.container{
+    padding: 25px 620px 50px 60px;
+}
+
+.nomeAPI{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+}
+
+
+
+.txtAPI{
+    margin-top: 25px;
+    font-size: 16px;
+    color:#6C757D;
+}
+
+.txtData{
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.cardAPI button{
+    margin-top: 40px;
+}
+
+.editar{
+    align-items: center;
+    padding: 10px 16px;
+    font-size: 18px;
+    width: 80px;
+    height: 40px;
+    color: white;
+    background: #FFC107;
+    border: 1px solid #FFC107;
+    border-radius: 4px;
+}
+
+.excluir{
+    align-items: center;
+    padding: 10px 10px;
+    font-size: 18px;
+    width: 80px;
+    height: 40px;
+    color: white;
+    background: #DC3545;
+    border: 1px solid #DC3545;
+    border-radius: 4px;
+}
+
+
+
+
+
+/* FOOTER BEGIN */
+footer{
+    background-color: var(--laranja);
+    justify-content: center;
+    align-items: center;
+    color: white;
+    display: flex;
+    height: 250px;
+    width: 100%;
+    margin-top: 50px;
+}
+
+footer h2{
+    margin-bottom: 100px;
+    font-size: 40px;
+}
+
+#txtFooter{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.rodape{
+    border-left: 2px solid white;
+    flex-direction: column;
+    margin-left: 45px;
+    line-height: 50px;
+    display: flex;
+}
+
+.rodape p{
+    margin-left: 50px;
+}
