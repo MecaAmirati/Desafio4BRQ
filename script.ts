@@ -65,6 +65,7 @@ interface ApiTipagem{
     id: string;
 }
 
+//Consumo da API, visualização no Console e injeção na página
 function obterCardsApi():void{
     fetch('https://62361b7feb166c26eb2f488a.mockapi.io/pacotes')
     .then(resposta=>resposta.json())
@@ -87,6 +88,7 @@ function obterCardsApi():void{
     
 }
 
+//Cadastro de novos cards 
 function criarCards() {
     inputNome.value;
     validacaoStatus (inputStatus);
@@ -98,6 +100,7 @@ function criarCards() {
     injetarDados(novosCards)
 }
 
+//Manipulação dos IDs
 function criarId() {
     let maiorId:number = 0
     novosCards.map((dadoId, index)=>{
@@ -114,6 +117,7 @@ btnCadastro.addEventListener('click', () => {
     criarCards() 
 })
 
+//Validação dos Status dos cards
 function validacaoStatus(status:any){
     status = inputStatus;
     for (let i = 0; i < status.length; i++) {
@@ -128,6 +132,7 @@ function validacaoStatus(status:any){
     return status
 }
 
+//Manipulação do formato da data
 function dataTexto(data:string):string{
     let newDate = new Date(data)
     let dataString:string;
@@ -135,6 +140,7 @@ function dataTexto(data:string):string{
     return dataString
 }
 
+//Injeção dos dados vindos da API na página HTML
 function injetarDados(arrayNovosCards:any){
     let cardNovo = document.querySelector('.cardAPI') as HTMLElement
     cardNovo.innerHTML = ''
@@ -151,6 +157,7 @@ function injetarDados(arrayNovosCards:any){
     // console.log(dataTexto(arrayNovosCards[0].data));
 }
 
+//Função para editar do botão
 function editar(id:string) {
     let indice:number
     indice = selecionarCardId(id)
@@ -166,7 +173,7 @@ function editar(id:string) {
 
 }
 
-
+//inversão da data recebida pela API
 function inversaoData(data:string):string{
     let newDate = new Date(data)
     let dataString:string;
@@ -176,6 +183,7 @@ function inversaoData(data:string):string{
     return dataString
 }
 
+//Função para excluir do botão
 function excluir(id:string) {
     let indice:number
     indice = selecionarCardId(id)
@@ -184,7 +192,7 @@ function excluir(id:string) {
 
 }
 
-
+//Função que valida e define o ID de cada card
 function selecionarCardId(id:string):number {
     let indice:number = 0
     for (let i = 0 ; i < novosCards.length; i++) {
@@ -200,6 +208,3 @@ function selecionarCardId(id:string):number {
 window.onload = () => {
     obterCardsApi();
 };
-
-// arrayNovosCards.map((x: any)=>console.log(x)
-// )
